@@ -24,7 +24,7 @@
 <script>
 // const baseUrl = "http://localhost:3000";
 const baseUrl = process.env.VUE_APP_API;
-window.console.log(baseUrl);
+window.console.log(process.env.VUE_APP_API,baseUrl);
 import axios from "axios";
 export default {
   name: "HelloWorld",
