@@ -9,6 +9,20 @@
   <link rel="stylesheet" href="./assets/css/stimulsoft.viewer.office2013.whiteblue.css">
   <script src="./assets/js/stimulsoft.reports.js"></script>
   <script src="./assets/js/stimulsoft.viewer.js"></script>
+  <% for (var i in htmlWebpackPlugin.options.cdn &&
+  htmlWebpackPlugin.options.cdn.css) { %>
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" />
+  <% } %>
+
+  <!-- 使用CDN的JS文件 -->
+  <% for (var i in htmlWebpackPlugin.options.cdn &&
+  htmlWebpackPlugin.options.cdn.js) { 
+  console.log(htmlWebpackPlugin.options,'htmlWebpackPlugin.options')%>
+  <script type="text/javascript" src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+  <% } %>
+
+
+
   <title>stimulsoft</title>
 </head>
 

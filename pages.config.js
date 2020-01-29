@@ -11,10 +11,10 @@ module.exports = {
     title: '后台管理',
     // chunks: ['chunk-vendors', 'chunk-common', 'index']
   },
-  'pages/mobile': {
-    template: 'public/index.html',
-    filename: 'mobile.html',
-    title: '移动端',
-    // chunks: ['chunk-vendors', 'chunk-common', 'index']
-  }
+  // 'pages/mobile': {
+  //   template: 'public/index.html',
+  //   filename: 'mobile.html',
+  //   title: '移动端',
+  //   // chunks: ['chunk-vendors', 'chunk-common', 'index']
+  // }
 }
