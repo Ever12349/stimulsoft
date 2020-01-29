@@ -43,7 +43,7 @@ if (!!pages) {
 let export_obj = {
     publicPath: is_prod ? './' : '/',
     productionSourceMap: !is_prod,
-    filenameHashing: !is_prod,
+    filenameHashing: true,
     lintOnSave: !is_prod,
     outputDir: 'docs',
     configureWebpack: config => {
